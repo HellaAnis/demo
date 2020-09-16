@@ -45,7 +45,6 @@ public class DemoApplication implements CommandLineRunner {
 
 
     public static List<String> readFile(String fileName, String wordToMatch) {
-        System.out.println("fileName = " + fileName);
         List<String> list = new ArrayList<>();
         try {
             list =
@@ -60,7 +59,6 @@ public class DemoApplication implements CommandLineRunner {
 
     public static void outPutToFile(List<String> result) {
         String fileName = "outPut.txt";
-        System.out.println("fileName = " + fileName);
         File file = new File(fileName);
         file.delete();
         result.forEach(s -> {
