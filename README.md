@@ -8,3 +8,4 @@ For exemple :
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--file.name=inPut.txt --word.to.match=word"
 ```
 
+If the input word match with any word of the input file the result will be saved in outPut file, a new file will be generated.
